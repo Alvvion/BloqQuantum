@@ -7,9 +7,19 @@ import ImageResize from "tiptap-extension-resize-image";
 import { ListKit } from "@tiptap/extension-list";
 import { TableKit } from "@tiptap/extension-table";
 import { Gapcursor, Dropcursor } from "@tiptap/extensions";
+import useEditorStore from "@/lib/useEditorStore";
 
 const Editor = () => {
+  const { setEditor } = useEditorStore();
   const editor = useEditor({
+    onCreate: ({ editor }) => setEditor(editor),
+    onUpdate: ({ editor }) => setEditor(editor),
+    onDestroy: () => setEditor(null),
+    onSelectionUpdate: ({ editor }) => setEditor(editor),
+    onTransaction: ({ editor }) => setEditor(editor),
+    onFocus: ({ editor }) => setEditor(editor),
+    onBlur: ({ editor }) => setEditor(editor),
+    onContentError: ({ editor }) => setEditor(editor),
     editorProps: {
       attributes: {
         class:
@@ -44,7 +54,7 @@ const Editor = () => {
     immediatelyRender: false,
   });
   return (
-    <div className="dark size-full overflow-x-auto bg-[#f9fbfd] dark:bg-[#262626] px-4 print:p-0 print:bg-white print:overflow-visible">
+    <div className="size-full overflow-x-auto bg-[#f9fbfd] dark:bg-[#262626] px-4 print:p-0 print:bg-white print:overflow-visible">
       <div className="min-w-max flex justify-center w-[816px] py-4 print:py-0 mx-auto print:w-full print:min-w-0">
         <EditorContent editor={editor} />
       </div>
