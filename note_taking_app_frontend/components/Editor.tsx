@@ -8,6 +8,7 @@ import { ListKit } from "@tiptap/extension-list";
 import { TableKit } from "@tiptap/extension-table";
 import { Gapcursor, Dropcursor } from "@tiptap/extensions";
 import useEditorStore from "@/lib/useEditorStore";
+import { TextStyleKit } from "@tiptap/extension-text-style";
 
 const Editor = () => {
   const { setEditor } = useEditorStore();
@@ -35,6 +36,7 @@ const Editor = () => {
       Dropcursor,
       TableKit.configure({ table: { resizable: true } }),
       Image,
+      TextStyleKit,
     ],
     content: `<table>
           <tbody>

@@ -8,7 +8,7 @@ type DocumentIdPageProps = {
 async function DocumentIdPage({ params }: DocumentIdPageProps) {
   const { documentId } = await params;
   return (
-    <div className="dark min-h-screen bg-[#fafbfd] dark:bg-[#262626]">
+    <div className="min-h-screen bg-[#fafbfd] dark:bg-[#262626]">
       <Toolbar />
       <Editor />
     </div>

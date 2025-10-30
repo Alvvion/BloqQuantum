@@ -3043,6 +3043,11 @@
   resolved "https://registry.yarnpkg.com/@tiptap/extension-table/-/extension-table-3.9.0.tgz#ccc2ae841020a9250e8726f407519844a8926d7e"
   integrity sha512-BfyJcqzDBx+VNssmL5QsOMLsDyAtSjnay9Yzxf6dyMX00QIipr69fUy/JDZ5N+7YUO6PJ9Bot60T8j9aNXTwCw==
 
+"@tiptap/extension-text-style@^3.9.0":
+  version "3.9.0"
+  resolved "https://registry.yarnpkg.com/@tiptap/extension-text-style/-/extension-text-style-3.9.0.tgz#273f7e051769a18165f11a2ed76427e526f18959"
+  integrity sha512-by/GH4A5kaiQqujA2KtXI1ZfQLMuFbb5tylAupPq+Pv6qzEU+Engx7vwUxb/dYvFHh+pxQPJeG6zxWf+WiGPQw==
+
 "@tiptap/extension-text@^3.9.0":
   version "3.9.0"
   resolved "https://registry.yarnpkg.com/@tiptap/extension-text/-/extension-text-3.9.0.tgz#0a1dda1bf1aeaa1e77f6be80a44d60e2adfcb957"
@@ -5601,6 +5606,11 @@ negotiator@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/negotiator/-/negotiator-1.0.0.tgz#b6c91bb47172d69f93cfd7c357bbb529019b5f6a"
   integrity sha512-8Ofs/AUQh8MaEcrlq5xOX0CQ9ypTF5dl78mjlMNfOK08fzpgTHQRQPBxcPlEtIw0yRpws+Zo/3r+5WRby7u3Gg==
+
+next-themes@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/next-themes/-/next-themes-0.4.6.tgz#8d7e92d03b8fea6582892a50a928c9b23502e8b6"
+  integrity sha512-pZvgD5L0IEvX5/9GWyHMf3m8BKiVQwsCMHfoFosXtXBMnaS0ZnIJ9ST4b4NqLVKDEm8QBxoNNGNaBv2JNF6XNA==
 
 next@16.0.0:
   version "16.0.0"
